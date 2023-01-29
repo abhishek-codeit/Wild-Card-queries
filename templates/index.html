@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<style>
+    body {
+        /* apply a background gradinent for whole body */
+        background: linear-gradient(to right, #ff9966 0%, #ff5e62 100%);
+        /* background-color: red; */
+        height: auto;
+        width: auto;
+
+
+    }
+
+    .main {
+        /* center the div horizantaly and vertically */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* set the width of the div */
+
+        /* background-color: green; */
+        margin: 0 auto;
+        width: 50%;
+        padding: 10px;
+
+
+    }
+
+    .search {
+        background-color: rgb(182, 182, 182);
+        width: 256px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px;
+        margin: 5px;
+
+    }
+
+    .sbutton {
+        background: #ff5e62;
+        /* rounded corner */
+        border-radius: 5px;
+        /* set the width of the button */
+        width: 100px;
+        /* set the height of the button */
+        height: 40px;
+        /* set the font size of the button */
+        font-size: 20px;
+        /* set the font color of the button */
+        color: white;
+        /* set the font weight of the button */
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Handling Wild Queries using Permuterm Index</h1>
+        <form action="/search" method="post">
+            <input type="text" name="query" class="search" placeholder="Search for a query">
+            <input type="submit" class="sbutton" value="Search">
+        </form>
+
+    </div>
+</body>
+
+
+</html>
